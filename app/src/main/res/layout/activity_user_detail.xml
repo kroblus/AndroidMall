@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0">
+    <!--标题栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_border_bottom">
+        <com.example.fruit.widget.ActionBar
+            android:id="@+id/myActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/a1" />
+
+    <TextView
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="40dp"
+        android:text="Modify user information" />
+    <!--表单布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical">
+        <!--账号-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_border_bottom"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:orientation="horizontal">
+            <!--TextView 文本  html的p标签-->
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="Account Number:"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/account"
+                android:layout_width="248dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textSize="16dp"/>
+        </LinearLayout>
+        <!--昵称-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_border_bottom"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:orientation="horizontal">
+            <!--TextView 文本  html的p标签-->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="Nickname"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+            <EditText
+                android:id="@+id/nickName"
+                android:layout_width="250dp"
+                android:textSize="16dp"
+
+                android:gravity="left"
+
+                android:layout_height="wrap_content"
+                android:text=""/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_border_bottom"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:orientation="horizontal">
+            <!--TextView 文本  html的p标签-->
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="Phone"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="250dp"
+                android:textSize="16dp"
+                android:inputType="number"
+                android:gravity="left"
+
+                android:layout_height="wrap_content"
+                android:text=""/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_border_bottom"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:orientation="horizontal">
+            <!--TextView 文本  html的p标签-->
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="Address"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="250dp"
+                android:textSize="16dp"
+
+                android:gravity="left"
+
+                android:layout_height="wrap_content"
+                android:text=""/>
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:onClick="save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="save"
+        android:background="@drawable/btn_border_fill"
+        android:textColor="@color/colorWhite"/>
+</LinearLayout>

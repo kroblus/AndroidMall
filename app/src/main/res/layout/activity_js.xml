@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_round_white"
+    tools:context="com.example.fruit.ui.activity.JsActivity" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_border_bottom">
+        <com.example.fruit.widget.ActionBar
+            android:id="@+id/myActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_marginBottom="20dp"
+        android:layout_width="77dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/a1" />
+    <EditText
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Thank you for your support！"
+        android:textSize="24dp"/>
+
+    <TextView
+        android:textColor="#000000"
+        android:layout_marginTop="30dp"
+        android:layout_width="280dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:text="Please choose your payment:"
+        android:textSize="18dp"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_marginLeft="10dp"
+            android:id="@+id/rab_wenxin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WeiXin"
+            android:layout_marginTop="10dp"
+            />
+        <RadioButton
+            android:id="@+id/rab_zhifubao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alipay"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            />
+        <RadioButton
+            android:id="@+id/rab_yinhangka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Card"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            />
+    </RadioGroup>
+    <TextView
+        android:textColor="#000000"
+        android:textSize="23dp"
+        android:id="@+id/tv_zf"
+        android:layout_width="280dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="Your chosen payment is:"/>
+
+
+    <Button
+        android:id="@+id/btn_ZF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/btn_border_fill"
+        android:textColor="@color/colorWhite"
+        android:layout_marginBottom="20dp"
+        android:textSize="24dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:textAllCaps="false"
+        android:text="Pay"/>
+
+</LinearLayout>

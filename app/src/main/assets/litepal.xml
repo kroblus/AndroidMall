@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <!--数据库名称-->
+    <dbname value="fruit"/>
+    <!--数据库版本-->
+    <version value="1"/>
+    <list>
+        <!--映射   每一张表 -->
+        <mapping class="com.example.fruit.bean.User"/>
+        <mapping class="com.example.fruit.bean.Fruit"/>
+        <mapping class="com.example.fruit.bean.Orders"/>
+        <mapping class="com.example.fruit.bean.Car"/>
+        <mapping class="com.example.fruit.bean.Browse"/>
+    </list>
+
+</litepal>
